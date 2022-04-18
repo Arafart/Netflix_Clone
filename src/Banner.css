@@ -1,51 +1,93 @@
-/* Container holding the image and the text */
-.container {
-  position: relative;
-  text-align: center;
+/* banner holding the image and the text */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald&display=swap");
+.banner {
+  height: 448px;
   color: white;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 15rem;
-  left: 20vh;
-}
+
+
 .banner__button {
-  color: black;
-  background-color: white;
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  color: white;
   outline: none;
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background: transparent;
+  background-color: rgba(29, 23, 23, 0.5);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
 }
 
-/* Top left text */
-.top-left {
+.banner__button1 {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 42%;
+  left: 18%;
+  color: white;
+  outline: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background: transparent;
+  background-color: rgba(29, 23, 23, 0.5);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
 }
 
-/* Top right text */
-.top-right {
+
+.movie__title {
   position: absolute;
-  top: 8px;
-  right: 16px;
+  top: 12.5rem;
+  left: 8.5rem;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
 
-/* Centered text */
-.centered {
+.banner__description {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 50rem;
+  transform: translate(-137.6%, -25%);
+  color: #ffffff;
+  font-size: 0.8rem;
+  max-width: 390px;
+  height: 80px;
+  background: transparent;
+  border: none;
+  word-spacing: 0.1rem;
 }
+
+.banner__button1:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+.banner__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+/* .banner__fadeBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgb(253, 251, 251),
+    rgb(240, 232, 232)
+  );
+} */
