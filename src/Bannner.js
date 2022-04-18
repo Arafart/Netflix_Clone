@@ -38,20 +38,26 @@ function Bannner() {
   //let image = `${img_url}${moviedata.backdrop_path}`;
 
   return (
-    <header className="container">
+    <header className="banner">
       <img
         src={`${img_url}${moviedata?.backdrop_path}`}
         alt={moviedata.name}
-        style={{ width: "100%", maxHeight: "30rem" }}
+        style={{
+          width: "100%",
+          maxHeight: "30rem",
+          boxShadow: "0px -10px 30px #ccc",
+        }}
       />
-      <div className="bottom-left">
+
+      <div className="movie__title">{moviedata.name}</div>
+      <div>
         <button className="banner__button">Play</button>
-        <button className="banner__button">My List</button>
       </div>
-      <div className="top-left">Top Left</div>
-      <div className="top-right">Top Right</div>
-      <div className="bottom-right">Bottom Right</div>
-      <div className="centered">Centered</div>
+      <div>
+        <button className="banner__button1">My List</button>
+      </div>
+
+      <div className="banner__description">{moviedata?.overview}</div>
     </header>
   );
 }
